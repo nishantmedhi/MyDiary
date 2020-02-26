@@ -1,0 +1,70 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.example.nmedh.mynote.DisplayWishesActivity"
+    android:background="@drawable/displaywish1">
+
+<TextView
+    android:id="@android:id/empty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Your Diary is Empty!!! Write an Entry today!!"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    tools:layout_constraintTop_creator="1"
+    tools:layout_constraintLeft_creator="1"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ListView
+    android:id="@+id/list"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:scrollbars="vertical"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@android:id/empty"
+    android:divider="#b4be"
+    android:dividerHeight="1dp"
+    tools:layout_constraintTop_creator="1"
+    tools:layout_constraintRight_creator="1"
+    tools:layout_constraintBottom_creator="1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="48dp"
+    tools:layout_constraintLeft_creator="1"
+    android:layout_marginBottom="48dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp">
+
+</ListView>
+
+<Button
+    android:id="@+id/newentry"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New Entry"
+    tools:layout_constraintTop_creator="1"
+    tools:layout_constraintRight_creator="1"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="2dp"
+    app:layout_constraintTop_toBottomOf="@+id/list"
+    tools:layout_constraintLeft_creator="1"
+    app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
